@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pracaDomowa 2</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>STAR WARS</h1>
+      <div id="buttons"></div>
+      <div class="nav">
+        <button id="prev">prev</button>
+        <span id="pageNumber"></span>
+        <button id="next">next</button>
+
+        <input id="search" type="text" placeholder="wyszukiwana fraza" />
+        <button id="searchButton">szukaj</button>
+      </div>
+      <div class="content">
+        <div id="removeModal" class="remove-modal">
+          <span>Czy napewno chcesz usunąć element?</span>
+          <button id="removeConfirm" class="modal-button">USUŃ</button>
+          <button id="removeDenid" class="modal-button">ANULUJ</button>
+        </div>
+
+        <div id="tblWrapper">
+          <table id="tbl"></table>
+        </div>
+        <div id="details">
+          <span class="close-details" id="closeDetails">X</span>
+          <br />
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

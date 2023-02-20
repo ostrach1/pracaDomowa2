@@ -1,0 +1,95 @@
+* {
+  background-color: lightgray;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.content {
+  display: flex;
+  align-items: flex-start;
+
+  flex-direction: row;
+}
+#details {
+  display: none;
+  flex-wrap: wrap;
+  width: 15vw;
+  height: auto;
+  position: relative;
+  right: 0;
+  top: 10;
+  border: 1px solid black;
+}
+
+.close-details {
+  box-sizing: border-box;
+  position: relative;
+
+  width: 10px;
+  height: 10px;
+  text-align: center;
+  border: black solid 1px;
+  margin: 10;
+}
+
+button {
+  margin: 10px;
+  padding: 5px;
+
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(1, 71, 71);
+  color: white;
+}
+
+table {
+  text-align: center;
+  border-collapse: collapse;
+  border: 1px solid;
+  padding: 10px;
+  width: 60vw;
+  height: 60px;
+}
+
+tr,
+td,
+th {
+  width: 20%;
+  border: 2px solid black;
+}
+
+.remove-modal {
+  box-sizing: border-box;
+  display: none;
+  position: absolute;
+  align-items: center;
+
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 40vw;
+  height: 20vh;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.remove-modal-span {
+  display: inline;
+  color: red;
+}
+
+.modal-button {
+  width: 30vw;
+  height: 5vh;
+}
